@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+
+  
+  <div class="user-info">
+    <ion-label><strong>Nombre:</strong> {{ nombre }}</ion-label><br>
+    <p></p>
+    <ion-label><strong>Apellido:</strong> {{ apellido }}</ion-label><br>
+    <p></p>
+    <ion-label><strong>Email:</strong> {{ email }}</ion-label><br>
+    <p></p>
+  </div>
+
+  
+  <div class="user-image">
+    <img src="assets/img/imgusuario.jpg" alt="Imagen del usuario" style="width: 100px; height: 100px; border-radius: 50%;">
+  </div>
+</ion-content>
+
+

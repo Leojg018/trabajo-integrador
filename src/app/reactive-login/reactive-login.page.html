@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Inicio de sesion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <div class="user-image">
+    <img src="assets/img/logo1.png" alt="Imagen del usuario" style="width:max-content; border-radius: 50%;">
+  </div>
+
+
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <ion-input label="Email" label-Placement="floating" placeholder="perez@email.com" 
+      formControlName="email"></ion-input>
+    <ion-input label="Contraseña" label="Password" formControlName="password">
+      <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+    </ion-input>
+    <ion-button expand="full" type="submit" [disabled]="!loginForm.valid">Iniciar sesión</ion-button>
+    <ion-button expand="full" routerLink="/crear-usuario">Crear usuario</ion-button>
+
+
+  </form>
+
+</ion-content>
